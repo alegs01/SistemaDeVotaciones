@@ -63,7 +63,7 @@ class Encuesta {
 }
 
 const preguntas = [
-    new Pregunta("¿Cuál es tu dispositivo tecnológico favorito para el día a día?", ["Telefono", "Notebook", "Tablet", "Smartwatch"]),
+    new Pregunta("¿Cuál es tu dispositivo tecnológico favorito para el día a día?", ["Smartphone", "Notebook", "Tablet", "Smartwatch"]),
     new Pregunta("¿Cuál es tu red social favorita?", ["Facebook", "Instagram", "Twitter", "TikTok"]),
     new Pregunta("¿Qué plataforma de streaming prefieres para ver películas y series?", ["Netflix", "Amazon Prime Video", "Disney+", "HBO Max"]),
     new Pregunta("¿Cuál es tu género de videojuegos favorito?", ["Acción/Aventura", "RPG (Role-Playing Game)", "FPS (First-Person Shooter)", "Estrategia"]),

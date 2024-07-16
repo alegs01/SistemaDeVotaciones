@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div>
+    <div class="container">
         <h1>Bienvenido al Sistema de Votaciones</h1>
         <h2>Instrucciones: </h2>
         <ol>
@@ -18,13 +18,8 @@
             <li>Finalmente utiliza el boton "Ver conteos totales" para saber cuantas veces se respondio cada respuesta</li>
         </ol>
         <button id="btnIniciar">Iniciar</button>
-
-    </div>
-    <div>
-        <button id="btnResultados">Ver Tus Respuestas</button>
-    </div>
-    <div>
-        <button id="btnConteos">Ver Conteos totales</button>
+        <button id="btnResultados" style="display: none;">Ver Tus Respuestas</button>
+        <button id="btnConteos" style="display: none;">Ver Conteos totales</button>
     </div>
 
     <script src="index.js"></script>

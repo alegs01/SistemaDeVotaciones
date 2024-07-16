@@ -21,11 +21,12 @@ h1 {
     color: #333;
     margin-bottom: 20px;
 }
+ol {
+    text-align: left;
+    margin-left: 20px;
+}
 
 button {
-    background-color: #007bff;
-    color: white;
-    border: none;
     padding: 10px 20px;
     margin: 10px;
     border-radius: 5px;
@@ -33,8 +34,34 @@ button {
     transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: #0056b3;
+button#btnIniciar {
+    background-color: #007bff; /* Azul */
+    color: white;
+    border: none;
+}
+
+button#btnIniciar:hover {
+    background-color: #0056b3; /* Azul más oscuro */
+}
+
+button#btnResultados {
+    background-color: #28a745; /* Verde */
+    color: white;
+    border: none;
+}
+
+button#btnResultados:hover {
+    background-color: #218838; /* Verde más oscuro */
+}
+
+button#btnConteos {
+    background-color: #dc3545; /* Rojo */
+    color: white;
+    border: none;
+}
+
+button#btnConteos:hover {
+    background-color: #c82333; /* Rojo más oscuro */
 }
 
 #resultados, #conteos {
