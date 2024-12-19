@@ -1,44 +1,61 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Encuesta</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <div class="container">
-        <h1>Bienvenido al Sistema de Votaciones</h1>
-        <h2>Instrucciones: </h2>
-        <ol>
-            <li>En primer Lugar abre la consola</li>
-            <li>A continuacion apreta el boton Iniciar</li>
-            <li>Para ver que respondiste haz clic en el boton "Ver tus Respuestas"</li>
-            <li>Si quieres iniciar una nueva encuesta apreta nuevamente el boton "Iniciar"</li>
-            <li>Finalmente utiliza el boton "Ver conteos totales" para saber cuantas veces se respondio cada respuesta</li>
-        </ol>
-        <button id="btnIniciar" style="display: none;">Iniciar</button>
-        <button id="btnResultados" style="display: none;">Ver Tus Respuestas</button>
-        <button id="btnConteos" style="display: none;">Ver Conteos totales</button>
-        <button id="btnPreguntas" onclick="openModal()">Añade Preguntas</button>
+      <h1>Bienvenido al Sistema de Votaciones</h1>
+      <h2>Instrucciones:</h2>
+      <ol>
+        <li>En primer Lugar abre la consola</li>
+        <li>A continuacion apreta el boton Iniciar</li>
+        <li>
+          Para ver que respondiste haz clic en el boton "Ver tus Respuestas"
+        </li>
+        <li>
+          Si quieres iniciar una nueva encuesta apreta nuevamente el boton
+          "Iniciar"
+        </li>
+        <li>
+          Finalmente utiliza el boton "Ver conteos totales" para saber cuantas
+          veces se respondio cada respuesta
+        </li>
+      </ol>
+      <button id="btnIniciar" style="display: none">Iniciar</button>
+      <button id="btnResultados" style="display: none">
+        Ver Tus Respuestas
+      </button>
+      <button id="btnConteos" style="display: none">Ver Conteos totales</button>
+      <button id="btnPreguntas" onclick="openModal()">Añade Preguntas</button>
     </div>
 
     <div id="preguntasModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <h2>Añadir preguntas</h2>
-            <h4>Tendrás que añadir al menos cuatro preguntas y sus opciones para poder cerrar la ventana</h4>
-            <p class="preguntasI">Pregunta 1</p>
-            <input type="text" class="pregunta" placeholder="Añade la primera pregunta">
-            <p>Opciones</p>
-            <input type="text" class="opciones" placeholder="Añade la opción 1">
-            <input type="text" class="opciones" placeholder="Añade la opción 2">
-            <input type="text" class="opciones" placeholder="Añade la opción 3">
-            <input type="text" class="opciones" placeholder="Añade la opción 4">
-            <button class="continuarModal">Siguiente</button>
-        </div>
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Añadir preguntas</h2>
+        <h4>
+          Tendrás que añadir al menos cuatro preguntas y sus opciones para poder
+          cerrar la ventana
+        </h4>
+        <p class="preguntasI">Pregunta 1</p>
+        <input
+          type="text"
+          class="pregunta"
+          placeholder="Añade la primera pregunta"
+        />
+        <p>Opciones</p>
+        <input type="text" class="opciones" placeholder="Añade la opción 1" />
+        <input type="text" class="opciones" placeholder="Añade la opción 2" />
+        <input type="text" class="opciones" placeholder="Añade la opción 3" />
+        <input type="text" class="opciones" placeholder="Añade la opción 4" />
+        <button class="continuarModal">Siguiente</button>
+      </div>
     </div>
 
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
